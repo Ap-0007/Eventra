@@ -61,7 +61,7 @@ jobs:
 
       - name: Checkout PR branch
         if: steps.metadata.outputs.isDraft != 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: ${{ steps.metadata.outputs.headRepo }}
           ref: ${{ steps.metadata.outputs.headRef }}
